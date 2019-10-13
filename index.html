@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl_nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Roulette spel</title>
+</head>
+<body>
+    <table border="1" class="tab1">
+        <tr>
+            <th colspan="13">0</th>
+        </tr>
+        <tr>
+            <td class="r" onclick="createEI(this)">1</td>
+            <td class="b" onclick="createEI(this)">2</td>
+            <td class="r" onclick="createEI(this)">3</td>
+        </tr>
+        <tr>
+            <td class="b" onclick="createEI(this)">4</td>
+            <td class="r" onclick="createEI(this)">5</td>
+            <td class="b" onclick="createEI(this)">6</td>
+        </tr>
+        <tr>
+            <td class="r" onclick="createEI(this)">7</td>
+            <td class="b" onclick="createEI(this)">8</td>
+            <td class="r" onclick="createEI(this)">9</td>
+        </tr>
+        <tr>
+            <td class="b" onclick="createEI(this)">10</td>
+            <td class="b" onclick="createEI(this)">11</td>
+            <td class="r" onclick="createEI(this)">12</td>
+        </tr>
+    </table>
+    <table border="1" class="tab1">
+        <tr>
+            <th colspan="4">1st 12</th>
+        </tr>
+        <tr>
+            <td>1 to 18</td>
+            <td>EVEN</td>
+         </tr>
+    </table>
+    <br>
+    <table border="1" id="tab3"> 
+        <tr>
+            <td class="b" onclick="createEI(this)">13</td>
+            <td class="r" onclick="createEI(this)">14</td>
+            <td class="b" onclick="createEI(this)">15</td>
+        </tr>
+        <tr>
+            <td class="r" onclick="createEI(this)">16</td>
+            <td class="b" onclick="createEI(this)">17</td>
+            <td class="r" onclick="createEI(this)">18</td>
+        </tr>
+        <tr>
+            <td class="r" onclick="createEI(this)">19</td>
+            <td class="b" onclick="createEI(this)">20</td>
+            <td class="r" onclick="createEI(this)">21</td>
+        </tr>
+        <tr>
+            <td class="b" class="r" onclick="createEI(this)">22</td>
+            <td class="r" class="r" onclick="createEI(this)">23</td>
+            <td class="b" class="r" onclick="createEI(this)">24</td>
+        </tr>
+    </table>
+    <table border="1" id="tab4">
+            <tr>
+                <th colspan="3">1nd 12</th>
+            </tr>
+            <tr>
+                <td id="rood"></td>
+                <td id="zwart"></td>
+            </tr>
+        </table>
+    <br>
+    <table border="1" id="tab5">
+        <tr>
+            <td class="r" class="r" onclick="createEI(this)">25</td>
+            <td class="b" class="r" onclick="createEI(this)">26</td>
+            <td class="r" class="r" onclick="createEI(this)">27</td>
+        </tr>
+        <tr>
+            <td class="b" class="r" onclick="createEI(this)">28</td>
+            <td class="b" class="r" onclick="createEI(this)">29</td>
+            <td class="r" class="r" onclick="createEI(this)">30</td>
+        </tr>
+        <tr>
+            <td class="b" class="r" onclick="createEI(this)">31</td>
+            <td class="r" class="r" onclick="createEI(this)">32</td>
+            <td class="b" class="r" onclick="createEI(this)">33</td>
+        </tr>
+
+        <tr>
+            <td class="r" class="r" onclick="createEI(this)">34</td>
+            <td class="b" class="r" onclick="createEI(this)">35</td>
+            <td class="r" class="r" onclick="createEI(this)">36</td>
+        </tr>
+        <tr>
+            <td>2 to 1</td>
+            <td>2 to 1</td>
+            <td>2 to 1</td>
+        </tr>
+    </table>
+    <table border="1" id="tab6">
+        <tr>
+            <th colspan="3">3rd 12</th>
+        </tr>
+        <tr>
+            <td>ODD</td>
+            <td>19 to 36</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+    
+    function createEI(element){
+        if(!element.coin){
+        var muntje = document.createElement("IMG");
+        element.appendChild(muntje);
+        muntje.src = "img/coin.png"
+        muntje.with = 25;
+        muntje.height = 25;
+        element.coin = true;
+        muntje.style.position = "absolute";
+        muntje.style.top = 0;
+        muntje.style.bottom = 0;
+        muntje.style.right = 0;
+        muntje.style.left = 0;
+        muntje.style.margin = "auto";
+        }
+    }
+    </script>
+
+    <div id="roulette">
+
+        <input type="button" value="spin" onClick="spin();">
+        
+        <canvas id="wheelcanvas" width="500" height="500"></canvas>
+    
+    </div>
+
+   <script type="text/javascript" src="js/roulette.js"></script>
+
+</body>
+</html>

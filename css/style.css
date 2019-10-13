@@ -1,0 +1,83 @@
+body{
+    background-color:  green;
+}
+table{
+    border-color: black;
+    border-radius: 2px;
+}
+.tab1{
+    float: left;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+}
+#tab3{
+    clear: both;
+    float: left;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+}
+#tab4{
+    float: left;
+    width: 400px;
+    height: 250px;
+}
+#tab5{
+    clear: both;
+    float: left;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+#tab6{
+    float: left;
+    width: 400px;
+    height: 240px;
+    text-align: center;
+}
+#rood{
+    width: 100px;
+    height: 100px; 
+    background-color:red;      
+    border-radius: 50%;      
+    -moz-border-radius: 50%;      
+    -webkit-border-radius: 50%;
+}
+#zwart{
+    width: 100px;      
+    height: 100px;      
+    background-color:black;      
+    border-radius: 50%;      
+    -moz-border-radius: 50%;      
+    -webkit-border-radius: 50%;
+}
+.r{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: red;
+}
+.b{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+}
+td:hover{
+    background-color: gray;
+}
+td{
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+th{
+    font-size: 20px;
+    color: white;
+}
+#roulette{
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    float: right;
+    width: 500px;
+}
